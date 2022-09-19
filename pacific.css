@@ -1,0 +1,270 @@
+@charset "utf-8";
+header, nav, main, footer { display: block;}
+
+* {box-sizing: border-box;
+}
+
+body {
+    background-color: #39c;
+    color: #666;
+    font-family: Verdana, Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #39c, #C2E0F0, #39c);
+}
+
+header {
+    background-color: #000033;
+    color: #fff;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+h1 {
+    line-height: 200%;
+    background-image: url(sunset.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-left: 2em;
+    height: 72px;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #339c;
+    font-family: Georgia, serif;
+}
+
+h3 {
+    color: #003;
+}
+
+nav {
+    font-weight: bold;
+    float: left;
+    width: 160px;
+    padding: 0;
+}
+
+nav a {text-decoration: none;}
+
+nav a:link {color: #fff;}
+nav a:hover {color: #3ccc;}
+nav a:visited {color: #c2e0f0;}
+nav ul {list-style-type: none;
+    padding-left: 1em
+}
+
+main { padding-right: 2em;
+    padding-left: 2em;
+    display: block;
+    background-color: #fff;
+    margin-left: 170px;
+    padding-top: 1px;
+}
+
+dt {
+    color: #003;
+    font-weight: bold;
+}
+
+.resort {
+    color: #003;
+    font-size: 1.2em;
+}
+
+footer {
+    font-size: .70em;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+    margin-left: 170px;
+}
+
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #003;
+    min-width: 700px;
+    max-width: 1024px;
+    box-shadow: 5px 10px 10px grey;
+}
+
+#homehero {background-image: url(coast.jpg);
+    height: 300px;
+    background-size: 100% 100%;
+}
+
+#yurthero {background-image: url(yurt.jpg);
+    height: 300px;
+    background-size: 100% 100%;
+}
+
+
+#trailhero {background-image: url(trail.jpg);
+    height: 300px;
+    background-size: 100% 100%;
+}
+
+#trailhero, #yurthero, #homehero {
+    margin-left: 170px;
+}
+
+table {width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #39C;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid #39c;
+}
+
+td { text-align: center;
+}
+
+.text {text-align: left;
+}
+
+tr:nth-child(even){
+    background-color: #f5fafc;
+    text-align: left;
+}
+
+label { float: left;
+    display: block;
+    width: 8em;
+    padding-right: 1em;
+}
+
+input, textarea {
+    display: block;
+    margin-bottom: 1em;
+}
+
+#mySubmit {margin-left: 10em;
+}
+
+video, embed {
+    float: right;
+    margin-left: 2em;
+}
+
+#mobile {
+    display: inline;
+}
+
+#desktop {
+    display: none;
+}
+
+.leftfloat {
+    float: left;
+    margin: 1em;
+}
+
+.clear {
+    clear: both;
+}
+
+
+
+@media only screen and (max-width: 1024px){
+    body {
+        margin:0;
+        padding:0;
+        background-image: none;
+    }
+
+    #wrapper {
+        width:auto;
+        min-width:0;
+        margin:0;
+        box-shadow:none;
+    }
+
+    h1{
+        margin: 0;}
+
+    nav {
+        float: none;
+        width: auto;
+        padding: 0.1em 1em;
+        background-color: #124373;
+    }
+
+    nav li {
+        display: inline-block;
+    }
+
+    nav a {
+        padding-right: 2em;
+    }
+
+    main {
+        padding: 1em;
+        font-size: 90%;
+        margin-left: 0;
+    }
+
+    footer {
+        margin: 0;
+    }
+
+    #yurthero, #trailhero, #homehero {
+        margin-left: 0;
+    }
+}
+
+@media only all and (max-width: 768px){
+    h1 {
+        height: 100%;
+        font-size: 1.5em;
+        padding-left: 0.3em;
+    }
+    nav {
+        padding: 0;
+    }
+
+    nav a {
+        display:block;
+        padding:0.2em;
+        font-size: 1.1em;
+        border-bottom: 1px solid #300;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+
+        display: block;
+        padding: 0'
+        margin: 0;
+    }
+
+    main {
+        padding: 0.1em 0.6em 0.1em 0.4em;
+    }
+
+    #homehero, #yurthero, #trailhero {
+        display: none;
+    }
+
+    footer {
+        padding: 0;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    #desktop: {
+        display: inline;
+    }
+
+}
+
